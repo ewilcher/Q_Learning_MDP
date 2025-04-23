@@ -63,17 +63,17 @@ def create_tree():
     tree.insert_children(curr, [child7, child9])
     class_node = MDPNode(10, "", "", "11a", [], [], [], True)
     curr = curr.children[0]
-    tree.insert_children(curr, [class_node])
+    tree.insert_children(curr, [class_node, class_node, class_node])
     curr = tree.root.children[2]
     curr = curr.children[0]
     curr = curr.children[1]
-    tree.insert_children(curr, [class_node])
+    tree.insert_children(curr, [class_node, class_node, class_node])
     curr = tree.root.children[0]
     curr = curr.children[0]
-    tree.insert_children(curr, [class_node])
+    tree.insert_children(curr, [class_node, class_node, class_node])
     curr = tree.root.children[1]
     curr = curr.children[0]
     curr = curr.children[0]
-    tree.insert_children(curr, [class_node])
+    tree.insert_children(curr, [class_node, class_node, class_node])
     return tree
 
