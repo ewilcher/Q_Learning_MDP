@@ -24,17 +24,23 @@ class Q_learning:
                     action = random.randint(0, (len(curr_state.actions) - 1))
                 else:
                     action = np.argmax(self.q_table[curr_state.id])
-                    if action > (len(curr_state.actions) - 1):
-                        action = random.randint(0, (len(curr_state.actions) - 1))
-                print(len(curr_state.children))
+                    #if action > (len(curr_state.actions) - 1):
+                    #    action = random.randint(0, (len(curr_state.actions) - 1))
+
                 next_state = curr_state.children[action]
                 if type(next_state) == list:
-                    choice = random.choices(list(enumerate(next_state)), weights=curr_state.transition_prob, k=1)[0]
-                    index, next_state = choice[0]
-                    reward = curr_state.rewards[action]
-                    reward = reward[index]
+                    choice = random.choices(next_state, weights=curr_state.transition_prob[action], k=1)
+                    index = None
+                    for j in range(len(next_state)):
+                        if next_state[j] == choice:
+                            index = j
+                    reward = curr_state.rewards[action][index]
+                    next_state = choice
                 else:
                     reward = curr_state.rewards[action]
 
+                if type(reward) == list:
+                    reward = reward[0]
                 self.q_table[curr_state.id, action] += self.learning_rate *(reward + self.discount_factor*np.max(self.q_table[next_state.id]) - self.q_table[curr_state.id, action])
                 curr_state = next_state
+        print(self.q_table)
