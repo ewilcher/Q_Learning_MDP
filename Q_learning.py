@@ -29,13 +29,13 @@ class Q_learning:
 
                 next_state = curr_state.children[action]
                 if type(next_state) == list:
-                    choice = random.choices(next_state, weights=curr_state.transition_prob[action], k=1)
-                    index = None
+                    print(curr_state.transition_prob[action])
+                    choice = random.choices(next_state, weights=[0.5, 0.5], k=1)
                     for j in range(len(next_state)):
                         if next_state[j] == choice:
-                            index = j
-                    reward = curr_state.rewards[action][index]
-                    next_state = choice
+                            break
+                    reward = curr_state.rewards[action]
+                    next_state = choice[0]
                 else:
                     reward = curr_state.rewards[action]
 

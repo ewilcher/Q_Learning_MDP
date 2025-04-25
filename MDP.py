@@ -27,6 +27,10 @@ class MDPNode:
     def getedges(self):
         return self.rewards, self.transition_prob
     
+    def insert_child(self, child: list):
+        for i in range(len(child)):
+            self.children.append(child[i])
+    
     
 class MDPGraph:
     def __init__(self, root):
