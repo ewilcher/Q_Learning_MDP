@@ -27,57 +27,35 @@ class MDPNode:
     def getedges(self):
         return self.rewards, self.transition_prob
     
-    def insert_child(self, child: list):
+    def insert_children(self, child: list):
         for i in range(len(child)):
             self.children.append(child[i])
-    
-    
-class MDPGraph:
-    def __init__(self, root):
-        self.root = root
 
-    def insert_children(self, curr: MDPNode, children: list):
-        for i in range(len(children)):
-            curr.children.append(children[i])
+    def print_info(self):
+        print(self.rest_state)
+        print(self.hw_state)
+        print(self.time_state)
+    
+
 
 def create_tree():
     root = MDPNode(0, "R", "U", "8p", ["P", "R", "S"], [2, 0, -1], [1.0, 1.0, 1.0])
-    tree = MDPGraph(root)
     child1 = MDPNode(1, "T", "U", "10p", ["P", "R"], [2, 0], [1.0, 1.0])
-    child2 = MDPNode(2, "R", "U", "10p", ["P", "R", "S"], [0, [2, 2], -1], [1.0, [.5, .5], 1.0])
-    child3 = MDPNode(3, "R", "D", "10p", ["P", "R"], [[2, 2], 0], [[.5, .5], 1.0])
-    tree.insert_children(tree.root, [child1, child2, child3])
-    curr = tree.root.children[0]
-    child4 = MDPNode(4, "R", "U", "10a", ["P", "R", "S"], [0, 0, 0], [1.0, 1.0, 1.0])
-    child5 = MDPNode(5, "R", "U", "8a", ["P", "R", "S"], [2, 0, -1], [1.0, 1.0, 1.0])
-    tree.insert_children(curr, [child4, child5])
-    curr = tree.root.children[1]
-    child6 = MDPNode(6, "R", "D", "8a", ["P", "R"], [2, 0], [1.0, 1.0])
-    tree.insert_children(curr, [child5, [child5, child4], child6])
-    curr = tree.root.children[2]
-    child7 = MDPNode(7, "R", "D", "10a", ["P", "R", "S"], [4, 4, 4], [1.0, 1.0, 1.0])
-    tree.insert_children(curr, [child6, [child6, child7]])
-    curr = tree.root.children[1]
-    curr = curr.children[0]
-    child8 = MDPNode(8, "T", "U", "10a", ["P", "R", "S"], [-1, -1, -1], [1.0, 1.0, 1.0])
-    tree.insert_children(curr, [child8, child4, child7])
-    curr = tree.root.children[2]
-    curr = curr.children[0]
+    child2 = MDPNode(2, "R", "U", "10p", ["P", "R", "S"], [2, 2, 0, -1], [.5, .5, 1.0, 1.0])
+    child3 = MDPNode(3, "R", "D", "10p", ["P", "R"], [2, 2, 0], [.5, .5, 1.0])
+    root.insert_children([child1, child2, child3])
+    child4 = MDPNode(4, "R", "U", "8a", ["P", "R", "S"], [2, 0, -1], [1.0, 1.0, 1.0])
+    child7 = MDPNode(7, "R", "U", "10a", ["P", "R", "S"], [0, 0, 0], [1.0, 1.0, 1.0])
+    child1.insert_children([child7, child4])
+    child5 = MDPNode(5, "R", "D", "8a", ["P", "R"], [2, 0], [1.0, 1.0])
+    child2.insert_children([child4, child7, child4, child5])
+    child8 = MDPNode(8, "R", "D", "10a", ["P", "R", "S"], [4, 4, 4], [1.0, 1.0, 1.0])
+    child3.insert_children([child5, child8, child5])
+    child6 = MDPNode(6, "T", "U", "10a", ["P", "R", "S"], [-1, -1, -1], [1.0, 1.0, 1.0])
+    child4.insert_children([child6, child7, child8]) 
     child9 = MDPNode(9, "T", "D", "10a", ["P", "R", "S"], [3, 3, 3], [1.0, 1.0, 1.0])
-    tree.insert_children(curr, [child7, child9])
+    child5.insert_children([child9, child8])
     class_node = MDPNode(10, "", "", "11a", [], [], [], True)
-    curr = curr.children[0]
-    tree.insert_children(curr, [class_node, class_node, class_node])
-    curr = tree.root.children[2]
-    curr = curr.children[0]
-    curr = curr.children[1]
-    tree.insert_children(curr, [class_node, class_node, class_node])
-    curr = tree.root.children[0]
-    curr = curr.children[0]
-    tree.insert_children(curr, [class_node, class_node, class_node])
-    curr = tree.root.children[1]
-    curr = curr.children[0]
-    curr = curr.children[0]
-    tree.insert_children(curr, [class_node, class_node, class_node])
-    return tree
-
+    for child in [child6, child7, child8, child9]:
+        child.insert_children([class_node, class_node, class_node])
+    return root
