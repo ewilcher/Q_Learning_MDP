@@ -16,7 +16,7 @@ class Q_learning:
         self.discount_factor = df
         self.epsilon = e
 
-    def optimal_policy(self, tree):
+    def optimal_policy(self, tree: MDP.MDPNode):
         curr_state = tree
         while curr_state.terminal != True:
             curr_state.print_info()
@@ -29,7 +29,7 @@ class Q_learning:
                 else:
                     curr_state = curr_state.children[action + 1]
             else:
-                curr_state.children[action]
+                curr_state = curr_state.children[action]
         curr_state.print_info()
                     
 
