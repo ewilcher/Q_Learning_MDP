@@ -1,0 +1,1379 @@
+Value iteration
+
+-------------------------------------
+
+Iteration 1
+State: RU8p | Old Value: 0.0000 | New Value: 2.0000
+Action Values: {'Party': 2.0, 'Rest': 0.0, 'Study': -1.0}
+Selected Action: Party
+
+State: TU10p | Old Value: 0.0000 | New Value: 2.0000
+Action Values: {'Party': 2.0, 'Rest': 0.0}
+Selected Action: Party
+
+State: RD10p | Old Value: 0.0000 | New Value: 2.0000
+Action Values: {'Party': 2.0, 'Rest': 0.0}
+Selected Action: Party
+
+State: RU10p | Old Value: 0.0000 | New Value: 2.0000
+Action Values: {'Party': 2.0, 'Rest': 0.0, 'Study': -1.0}
+Selected Action: Party
+
+State: RU8a | Old Value: 0.0000 | New Value: 2.0000
+Action Values: {'Party': 2.0, 'Rest': 0.0, 'Study': -1.0}
+Selected Action: Party
+
+State: RD8a | Old Value: 0.0000 | New Value: 2.0000
+Action Values: {'Party': 2.0, 'Rest': 0.0}
+Selected Action: Party
+
+State: TU10a | Old Value: 0.0000 | New Value: -1.0000
+Action Values: {'any': -1.0}
+Selected Action: any
+
+State: RU10a | Old Value: 0.0000 | New Value: 0.0000
+Action Values: {'any': 0.0}
+Selected Action: any
+
+State: RD10a | Old Value: 0.0000 | New Value: 4.0000
+Action Values: {'any': 4.0}
+Selected Action: any
+
+State: TD10a | Old Value: 0.0000 | New Value: 3.0000
+Action Values: {'any': 3.0}
+Selected Action: any
+
+Iteration 2
+State: RU8p | Old Value: 2.0000 | New Value: 3.9800
+Action Values: {'Party': 3.98, 'Rest': 1.98, 'Study': 0.98}
+Selected Action: Party
+
+State: TU10p | Old Value: 2.0000 | New Value: 2.0000
+Action Values: {'Party': 2.0, 'Rest': 1.98}
+Selected Action: Party
+
+State: RD10p | Old Value: 2.0000 | New Value: 4.9700
+Action Values: {'Party': 4.97, 'Rest': 1.98}
+Selected Action: Party
+
+State: RU10p | Old Value: 2.0000 | New Value: 2.9900
+Action Values: {'Party': 2.99, 'Rest': 1.98, 'Study': 0.98}
+Selected Action: Party
+
+State: RU8a | Old Value: 2.0000 | New Value: 2.9600
+Action Values: {'Party': 1.01, 'Rest': 0.0, 'Study': 2.96}
+Selected Action: Study
+
+State: RD8a | Old Value: 2.0000 | New Value: 4.9700
+Action Values: {'Party': 4.97, 'Rest': 3.96}
+Selected Action: Party
+
+State: TU10a | Old Value: -1.0000 | New Value: -1.0000
+Action Values: {'any': -1.0}
+Selected Action: any
+
+State: RU10a | Old Value: 0.0000 | New Value: 0.0000
+Action Values: {'any': 0.0}
+Selected Action: any
+
+State: RD10a | Old Value: 4.0000 | New Value: 4.0000
+Action Values: {'any': 4.0}
+Selected Action: any
+
+State: TD10a | Old Value: 3.0000 | New Value: 3.0000
+Action Values: {'any': 3.0}
+Selected Action: any
+
+Iteration 3
+State: RU8p | Old Value: 3.9800 | New Value: 3.9800
+Action Values: {'Party': 3.98, 'Rest': 2.9601, 'Study': 3.9203}
+Selected Action: Party
+
+State: TU10p | Old Value: 2.0000 | New Value: 2.9304
+Action Values: {'Party': 2.0, 'Rest': 2.9304}
+Selected Action: Rest
+
+State: RD10p | Old Value: 4.9700 | New Value: 6.4402
+Action Values: {'Party': 6.44015, 'Rest': 4.9203}
+Selected Action: Party
+
+State: RU10p | Old Value: 2.9900 | New Value: 3.9203
+Action Values: {'Party': 3.4652000000000003, 'Rest': 2.9304, 'Study': 3.9203}
+Selected Action: Study
+
+State: RU8a | Old Value: 2.9600 | New Value: 2.9600
+Action Values: {'Party': 1.01, 'Rest': 0.0, 'Study': 2.96}
+Selected Action: Study
+
+State: RD8a | Old Value: 4.9700 | New Value: 4.9700
+Action Values: {'Party': 4.97, 'Rest': 3.96}
+Selected Action: Party
+
+State: TU10a | Old Value: -1.0000 | New Value: -1.0000
+Action Values: {'any': -1.0}
+Selected Action: any
+
+State: RU10a | Old Value: 0.0000 | New Value: 0.0000
+Action Values: {'any': 0.0}
+Selected Action: any
+
+State: RD10a | Old Value: 4.0000 | New Value: 4.0000
+Action Values: {'any': 4.0}
+Selected Action: any
+
+State: TD10a | Old Value: 3.0000 | New Value: 3.0000
+Action Values: {'any': 3.0}
+Selected Action: any
+
+Iteration 4
+State: RU8p | Old Value: 3.9800 | New Value: 5.3757
+Action Values: {'Party': 4.901096, 'Rest': 3.881097, 'Study': 5.3757485}
+Selected Action: Study
+
+State: TU10p | Old Value: 2.9304 | New Value: 2.9304
+Action Values: {'Party': 2.0, 'Rest': 2.9304}
+Selected Action: Rest
+
+State: RD10p | Old Value: 6.4402 | New Value: 6.4402
+Action Values: {'Party': 6.44015, 'Rest': 4.9203}
+Selected Action: Party
+
+State: RU10p | Old Value: 3.9203 | New Value: 3.9203
+Action Values: {'Party': 3.4652000000000003, 'Rest': 2.9304, 'Study': 3.9203}
+Selected Action: Study
+
+State: RU8a | Old Value: 2.9600 | New Value: 2.9600
+Action Values: {'Party': 1.01, 'Rest': 0.0, 'Study': 2.96}
+Selected Action: Study
+
+State: RD8a | Old Value: 4.9700 | New Value: 4.9700
+Action Values: {'Party': 4.97, 'Rest': 3.96}
+Selected Action: Party
+
+State: TU10a | Old Value: -1.0000 | New Value: -1.0000
+Action Values: {'any': -1.0}
+Selected Action: any
+
+State: RU10a | Old Value: 0.0000 | New Value: 0.0000
+Action Values: {'any': 0.0}
+Selected Action: any
+
+State: RD10a | Old Value: 4.0000 | New Value: 4.0000
+Action Values: {'any': 4.0}
+Selected Action: any
+
+State: TD10a | Old Value: 3.0000 | New Value: 3.0000
+Action Values: {'any': 3.0}
+Selected Action: any
+
+Iteration 5
+State: RU8p | Old Value: 5.3757 | New Value: 5.3757
+Action Values: {'Party': 4.901096, 'Rest': 3.881097, 'Study': 5.3757485}
+Selected Action: Study
+
+State: TU10p | Old Value: 2.9304 | New Value: 2.9304
+Action Values: {'Party': 2.0, 'Rest': 2.9304}
+Selected Action: Rest
+
+State: RD10p | Old Value: 6.4402 | New Value: 6.4402
+Action Values: {'Party': 6.44015, 'Rest': 4.9203}
+Selected Action: Party
+
+State: RU10p | Old Value: 3.9203 | New Value: 3.9203
+Action Values: {'Party': 3.4652000000000003, 'Rest': 2.9304, 'Study': 3.9203}
+Selected Action: Study
+
+State: RU8a | Old Value: 2.9600 | New Value: 2.9600
+Action Values: {'Party': 1.01, 'Rest': 0.0, 'Study': 2.96}
+Selected Action: Study
+
+State: RD8a | Old Value: 4.9700 | New Value: 4.9700
+Action Values: {'Party': 4.97, 'Rest': 3.96}
+Selected Action: Party
+
+State: TU10a | Old Value: -1.0000 | New Value: -1.0000
+Action Values: {'any': -1.0}
+Selected Action: any
+
+State: RU10a | Old Value: 0.0000 | New Value: 0.0000
+Action Values: {'any': 0.0}
+Selected Action: any
+
+State: RD10a | Old Value: 4.0000 | New Value: 4.0000
+Action Values: {'any': 4.0}
+Selected Action: any
+
+State: TD10a | Old Value: 3.0000 | New Value: 3.0000
+Action Values: {'any': 3.0}
+Selected Action: any
+
+Num of iterations: 6
+Final policy (values and best actions for each state)
+RU8p: 5.3757 | Best action: Study
+TU10p: 2.9304 | Best action: Rest
+RD10p: 6.4402 | Best action: Party
+RU10p: 3.9203 | Best action: Study
+RU8a: 2.9600 | Best action: Study
+RD8a: 4.9700 | Best action: Party
+TU10a: -1.0000 | Best action: any
+RU10a: 0.0000 | Best action: any
+RD10a: 4.0000 | Best action: any
+TD10a: 3.0000 | Best action: any
+-------------------------------------
+
+Q Learning
+
+-------------------------------------
+
+Previous value: 0.0
+New Value: 0.2
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.2
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.2
+New Value: 0.39980000000000004
+Immediate Reward: 2
+Q-values for next state: [0.2 0.  0. ]
+Previous value: 0.2
+New Value: 0.38
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.2
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.39980000000000004
+New Value: 0.5974400000000001
+Immediate Reward: 2
+Q-values for next state: [0.38 0.   0.  ]
+Previous value: 0.38
+New Value: 0.542
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.5974400000000001
+New Value: 0.7913540000000001
+Immediate Reward: 2
+Q-values for next state: [0.542 0.    0.   ]
+Previous value: 0.542
+New Value: 0.6878000000000001
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.7913540000000001
+New Value: 0.9803108
+Immediate Reward: 2
+Q-values for next state: [0.6878 0.     0.    ]
+Previous value: 0.6878000000000001
+New Value: 0.8190200000000001
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.9803108
+New Value: 1.1633627
+Immediate Reward: 2
+Q-values for next state: [0.81902 0.      0.     ]
+Previous value: 0.8190200000000001
+New Value: 0.9371180000000001
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: -0.1
+Immediate Reward: -1
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.2
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.2
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.30000000000000004
+Immediate Reward: 3
+Q-values for next state: [0. 0. 0.]
+Previous value: 1.1633627
+New Value: 1.339801112
+Immediate Reward: 2
+Q-values for next state: [0.937118 0.       0.      ]
+Previous value: 0.9371180000000001
+New Value: 1.0434062000000002
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 1.339801112
+New Value: 1.5091182146
+Immediate Reward: 2
+Q-values for next state: [1.0434062 0.        0.       ]
+Previous value: 1.0434062000000002
+New Value: 1.1390655800000002
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 1.5091182146
+New Value: 1.67097388556
+Immediate Reward: 2
+Q-values for next state: [1.13906558 0.         0.        ]
+Previous value: 1.1390655800000002
+New Value: 1.2251590220000002
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 1.67097388556
+New Value: 1.825167240182
+Immediate Reward: 2
+Q-values for next state: [1.22515902 0.         0.        ]
+Previous value: 1.2251590220000002
+New Value: 1.3026431198000001
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0198
+Immediate Reward: 0
+Q-values for next state: [0.2 0.  0. ]
+Previous value: 0.2
+New Value: 0.38
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.2
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: -0.1
+Immediate Reward: -1
+Q-values for next state: [0. 0. 0.]
+Previous value: 1.825167240182
+New Value: 1.971612185024
+Immediate Reward: 2
+Q-values for next state: [1.30264312 0.         0.        ]
+Previous value: 1.3026431198000001
+New Value: 1.37237880782
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 1.971612185024
+New Value: 2.11031646849578
+Immediate Reward: 2
+Q-values for next state: [1.37237881 0.         0.        ]
+Previous value: 0.0
+New Value: 0.0198
+Immediate Reward: 0
+Q-values for next state: [0.2 0.  0. ]
+Previous value: 0.0
+New Value: -0.1
+Immediate Reward: -1
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.4
+Immediate Reward: 4
+Q-values for next state: [0. 0. 0.]
+Previous value: 2.11031646849578
+New Value: 2.235150323620382
+Immediate Reward: 2
+Q-values for next state: [1.37237881 0.0198     0.        ]
+Previous value: 1.37237880782
+New Value: 1.435140927038
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 2.235150323620382
+New Value: 2.353714243035106
+Immediate Reward: 2
+Q-values for next state: [1.43514093 0.0198     0.        ]
+Previous value: 1.435140927038
+New Value: 1.4916268343342
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 2.353714243035106
+New Value: 2.466013875330681
+Immediate Reward: 2
+Q-values for next state: [1.49162683 0.0198     0.        ]
+Previous value: 1.4916268343342
+New Value: 1.5424641509007802
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 2.466013875330681
+New Value: 2.5721164387367903
+Immediate Reward: 2
+Q-values for next state: [1.54246415 0.0198     0.        ]
+Previous value: 1.5424641509007802
+New Value: 1.5882177358107021
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 2.5721164387367903
+New Value: 2.6721383507083707
+Immediate Reward: 2
+Q-values for next state: [1.58821774 0.0198     0.        ]
+Previous value: 1.5882177358107021
+New Value: 1.629395962229632
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 2.6721383507083707
+New Value: 2.766234715898267
+Immediate Reward: 2
+Q-values for next state: [1.62939596 0.0198     0.        ]
+Previous value: 1.629395962229632
+New Value: 1.6664563660066687
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0198
+New Value: 0.05544
+Immediate Reward: 0
+Q-values for next state: [0.38 0.   0.  ]
+Previous value: 0.38
+New Value: 0.5618000000000001
+Immediate Reward: 2
+Q-values for next state: [ 0.2  0.  -0.1]
+Previous value: 0.2
+New Value: 0.38
+Immediate Reward: 2
+Q-values for next state: [-0.1  0.   0. ]
+Previous value: 0.0
+New Value: -0.1
+Immediate Reward: -1
+Q-values for next state: [0. 0. 0.]
+Previous value: 2.766234715898267
+New Value: 2.8545904245431006
+Immediate Reward: 2
+Q-values for next state: [1.66645637 0.0198     0.        ]
+Previous value: 1.6664563660066687
+New Value: 1.6998107294060019
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 2.8545904245431006
+New Value: 2.9374126442999846
+Immediate Reward: 2
+Q-values for next state: [1.69981073 0.0198     0.        ]
+Previous value: 1.6998107294060019
+New Value: 1.7298296564654017
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 2.9374126442999846
+New Value: 3.014924515860061
+Immediate Reward: 2
+Q-values for next state: [1.72982966 0.0198     0.        ]
+Previous value: 1.7298296564654017
+New Value: 1.7568466908188616
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.05544
+New Value: 0.1055142
+Immediate Reward: 0
+Q-values for next state: [0.5618 0.     0.    ]
+Previous value: 0.5618000000000001
+New Value: 0.7056200000000001
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.014924515860061
+New Value: 3.0873598866651224
+Immediate Reward: 2
+Q-values for next state: [1.75684669 0.0198     0.        ]
+Previous value: 1.7568466908188616
+New Value: 1.7811620217369755
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.0873598866651224
+New Value: 3.1549589381505707
+Immediate Reward: 2
+Q-values for next state: [1.78116202 0.0198     0.        ]
+Previous value: 1.7811620217369755
+New Value: 1.803045819563278
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.1549589381505707
+New Value: 3.217964580472278
+Immediate Reward: 2
+Q-values for next state: [1.80304582 0.0198     0.        ]
+Previous value: 1.803045819563278
+New Value: 1.82274123760695
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.217964580472278
+New Value: 3.276619504948138
+Immediate Reward: 2
+Q-values for next state: [1.82274124 0.0198     0.        ]
+Previous value: 1.82274123760695
+New Value: 1.840467113846255
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.276619504948138
+New Value: 3.3311637987241034
+Immediate Reward: 2
+Q-values for next state: [1.84046711 0.0198     0.        ]
+Previous value: 1.840467113846255
+New Value: 1.8564204024616295
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.3311637987241034
+New Value: 3.3818330386953943
+Immediate Reward: 2
+Q-values for next state: [1.8564204 0.0198    0.       ]
+Previous value: 0.0198
+New Value: 0.05544
+Immediate Reward: 0
+Q-values for next state: [ 0.38  0.   -0.1 ]
+Previous value: -0.1
+New Value: -0.1504
+Immediate Reward: -1
+Q-values for next state: [0.4 0.  0. ]
+Previous value: 0.4
+New Value: 0.76
+Immediate Reward: 4
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.3818330386953943
+New Value: 3.427435354669556
+Immediate Reward: 2
+Q-values for next state: [1.8564204 0.05544   0.       ]
+Previous value: 1.8564204024616295
+New Value: 1.8707783622154666
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.427435354669556
+New Value: 3.4698988770619317
+Immediate Reward: 2
+Q-values for next state: [1.87077836 0.05544    0.        ]
+Previous value: 1.8707783622154666
+New Value: 1.88370052599392
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.4698988770619317
+New Value: 3.5093953414291366
+Immediate Reward: 2
+Q-values for next state: [1.88370053 0.05544    0.        ]
+Previous value: 1.88370052599392
+New Value: 1.895330473394528
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.5093953414291366
+New Value: 3.546093524152281
+Immediate Reward: 2
+Q-values for next state: [1.89533047 0.05544    0.        ]
+Previous value: 1.895330473394528
+New Value: 1.9057974260550752
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.546093524152281
+New Value: 3.5801581169165053
+Immediate Reward: 2
+Q-values for next state: [1.90579743 0.05544    0.        ]
+Previous value: 1.9057974260550752
+New Value: 1.9152176834495678
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.5801581169165053
+New Value: 3.611748855886362
+Immediate Reward: 2
+Q-values for next state: [1.91521768 0.05544    0.        ]
+Previous value: 1.9152176834495678
+New Value: 1.923695915104611
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: -0.1
+New Value: -0.17020000000000002
+Immediate Reward: -1
+Q-values for next state: [0.2 0.  0. ]
+Previous value: 0.2
+New Value: 0.45524
+Immediate Reward: 2
+Q-values for next state: [0.76 0.   0.  ]
+Previous value: 0.76
+New Value: 1.084
+Immediate Reward: 4
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.611748855886362
+New Value: 3.6410198658930826
+Immediate Reward: 2
+Q-values for next state: [1.92369592 0.05544    0.        ]
+Previous value: 1.923695915104611
+New Value: 1.9313263235941498
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.6410198658930826
+New Value: 3.668119185339595
+Immediate Reward: 2
+Q-values for next state: [1.93132632 0.05544    0.        ]
+Previous value: 1.9313263235941498
+New Value: 1.9381936912347348
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.668119185339595
+New Value: 3.6931884422378745
+Immediate Reward: 2
+Q-values for next state: [1.93819369 0.05544    0.        ]
+Previous value: 1.9381936912347348
+New Value: 1.9443743221112613
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.6931884422378745
+New Value: 3.7163626559031018
+Immediate Reward: 2
+Q-values for next state: [1.94437432 0.05544    0.        ]
+Previous value: 1.9443743221112613
+New Value: 1.949936889900135
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.7163626559031018
+New Value: 3.737770142412905
+Immediate Reward: 2
+Q-values for next state: [1.94993689 0.05544    0.        ]
+Previous value: 1.949936889900135
+New Value: 1.9549432009101215
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.1055142
+New Value: 0.16481916000000002
+Immediate Reward: 0
+Q-values for next state: [0.70562 0.      0.     ]
+Previous value: 0.7056200000000001
+New Value: 0.8350580000000001
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.737770142412905
+New Value: 3.7575325050617163
+Immediate Reward: 2
+Q-values for next state: [1.9549432 0.05544   0.       ]
+Previous value: 1.9549432009101215
+New Value: 1.9594488808191093
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.7575325050617163
+New Value: 3.7757646937566367
+Immediate Reward: 2
+Q-values for next state: [1.95944888 0.05544    0.        ]
+Previous value: 1.9594488808191093
+New Value: 1.9635039927371984
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.7757646937566367
+New Value: 3.7925751196619557
+Immediate Reward: 2
+Q-values for next state: [1.96350399 0.05544    0.        ]
+Previous value: 0.05544
+New Value: 0.08751600000000001
+Immediate Reward: 0
+Q-values for next state: [ 0.38    0.     -0.1504]
+Previous value: 0.38
+New Value: 0.542
+Immediate Reward: 2
+Q-values for next state: [-0.1 -0.1  0. ]
+Previous value: -0.1
+New Value: -0.19
+Immediate Reward: -1
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.7925751196619557
+New Value: 3.8077045029767427
+Immediate Reward: 2
+Q-values for next state: [1.96350399 0.087516   0.        ]
+Previous value: 1.9635039927371984
+New Value: 1.9671535934634785
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.8077045029767427
+New Value: 3.8216822584319528
+Immediate Reward: 2
+Q-values for next state: [1.96715359 0.087516   0.        ]
+Previous value: 1.9671535934634785
+New Value: 1.9704382341171307
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.8216822584319528
+New Value: 3.8345874177663535
+Immediate Reward: 2
+Q-values for next state: [1.97043823 0.087516   0.        ]
+Previous value: 1.9704382341171307
+New Value: 1.9733944107054175
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.8345874177663535
+New Value: 3.8464947226495543
+Immediate Reward: 2
+Q-values for next state: [1.97339441 0.087516   0.        ]
+Previous value: 1.9733944107054175
+New Value: 1.9760549696348757
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.8464947226495543
+New Value: 3.8574746923784513
+Immediate Reward: 2
+Q-values for next state: [1.97605497 0.087516   0.        ]
+Previous value: 0.08751600000000001
+New Value: 0.13242240000000002
+Immediate Reward: 0
+Q-values for next state: [ 0.542   0.     -0.1504]
+Previous value: 0.542
+New Value: 0.6878000000000001
+Immediate Reward: 2
+Q-values for next state: [-0.19 -0.1   0.  ]
+Previous value: 0.0
+New Value: -0.1
+Immediate Reward: -1
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.16481916000000002
+New Value: 0.23100798600000003
+Immediate Reward: 0
+Q-values for next state: [0.835058 0.       0.      ]
+Previous value: 0.0
+New Value: -0.08020000000000001
+Immediate Reward: -1
+Q-values for next state: [0.2 0.  0. ]
+Previous value: 0.2
+New Value: 0.4097
+Immediate Reward: 2
+Q-values for next state: [0.3 0.  0. ]
+Previous value: 0.30000000000000004
+New Value: 0.5700000000000001
+Immediate Reward: 3
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.8574746923784513
+New Value: 3.8673566651344586
+Immediate Reward: 2
+Q-values for next state: [1.97605497 0.1324224  0.        ]
+Previous value: 1.9760549696348757
+New Value: 1.9784494726713882
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.8673566651344586
+New Value: 3.8764874964154803
+Immediate Reward: 2
+Q-values for next state: [1.97844947 0.1324224  0.        ]
+Previous value: 1.9784494726713882
+New Value: 1.9806045254042492
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.8764874964154803
+New Value: 3.884918594788953
+Immediate Reward: 2
+Q-values for next state: [1.98060453 0.1324224  0.        ]
+Previous value: 1.9806045254042492
+New Value: 1.9825440728638244
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.884918594788953
+New Value: 3.8926985985235762
+Immediate Reward: 2
+Q-values for next state: [1.98254407 0.1324224  0.        ]
+Previous value: 1.9825440728638244
+New Value: 1.984289665577442
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.23100798600000003
+New Value: 0.29057792940000005
+Immediate Reward: 0
+Q-values for next state: [ 0.835058  0.       -0.0802  ]
+Previous value: -0.08020000000000001
+New Value: -0.1316197
+Immediate Reward: -1
+Q-values for next state: [0.4097 0.     0.    ]
+Previous value: 0.0
+New Value: 0.10731600000000002
+Immediate Reward: 0
+Q-values for next state: [1.084 0.    0.   ]
+Previous value: 1.084
+New Value: 1.3756000000000002
+Immediate Reward: 4
+Q-values for next state: [0. 0. 0.]
+Previous value: -0.17020000000000002
+New Value: -0.20811124000000003
+Immediate Reward: -1
+Q-values for next state: [0.45524 0.      0.     ]
+Previous value: 0.45524
+New Value: 0.7459004
+Immediate Reward: 2
+Q-values for next state: [1.3756 0.     0.    ]
+Previous value: 1.3756000000000002
+New Value: 1.6380400000000002
+Immediate Reward: 4
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.8926985985235762
+New Value: 3.8998734155633854
+Immediate Reward: 2
+Q-values for next state: [1.98428967 0.1324224  0.        ]
+Previous value: 1.984289665577442
+New Value: 1.9858606990196979
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.8998734155633854
+New Value: 3.906486283209997
+Immediate Reward: 2
+Q-values for next state: [1.9858607 0.1324224 0.       ]
+Previous value: 1.9858606990196979
+New Value: 1.9872746291177281
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.906486283209997
+New Value: 3.9125778431716522
+Immediate Reward: 2
+Q-values for next state: [1.98727463 0.1324224  0.        ]
+Previous value: 1.9872746291177281
+New Value: 1.9885471662059553
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.9125778431716522
+New Value: 3.9181862283088766
+Immediate Reward: 2
+Q-values for next state: [1.98854717 0.1324224  0.        ]
+Previous value: 1.9885471662059553
+New Value: 1.9896924495853598
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.9181862283088766
+New Value: 3.9233471579869397
+Immediate Reward: 2
+Q-values for next state: [1.98969245 0.1324224  0.        ]
+Previous value: 1.9896924495853598
+New Value: 1.990723204626824
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.9233471579869397
+New Value: 3.928094039446301
+Immediate Reward: 2
+Q-values for next state: [1.9907232 0.1324224 0.       ]
+Previous value: 1.990723204626824
+New Value: 1.9916508841641416
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.928094039446301
+New Value: 3.932458073033921
+Immediate Reward: 2
+Q-values for next state: [1.99165088 0.1324224  0.        ]
+Previous value: 0.13242240000000002
+New Value: 0.18727236000000003
+Immediate Reward: 0
+Q-values for next state: [ 0.6878  0.     -0.1504]
+Previous value: 0.6878000000000001
+New Value: 0.8091200000000001
+Immediate Reward: 2
+Q-values for next state: [-0.19 -0.1  -0.1 ]
+Previous value: -0.1
+New Value: -0.19
+Immediate Reward: -1
+Q-values for next state: [0. 0. 0.]
+Previous value: -0.20811124000000003
+New Value: -0.21345597640000002
+Immediate Reward: -1
+Q-values for next state: [0.7459004 0.        0.       ]
+Previous value: 0.7459004
+New Value: 1.0334763200000001
+Immediate Reward: 2
+Q-values for next state: [1.63804 0.      0.     ]
+Previous value: 1.6380400000000002
+New Value: 1.8742360000000002
+Immediate Reward: 4
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.932458073033921
+New Value: 3.936385703262779
+Immediate Reward: 2
+Q-values for next state: [1.99165088 0.18727236 0.        ]
+Previous value: 1.9916508841641416
+New Value: 1.9924857957477276
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.936385703262779
+New Value: 3.9400032267155263
+Immediate Reward: 2
+Q-values for next state: [1.9924858  0.18727236 0.        ]
+Previous value: 1.9924857957477276
+New Value: 1.9932372161729548
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: -0.21345597640000002
+New Value: -0.18979622308
+Immediate Reward: -1
+Q-values for next state: [1.03347632 0.         0.        ]
+Previous value: 1.0334763200000001
+New Value: 1.3156780520000002
+Immediate Reward: 2
+Q-values for next state: [1.874236 0.       0.      ]
+Previous value: 1.8742360000000002
+New Value: 2.0868124000000003
+Immediate Reward: 4
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.9400032267155263
+New Value: 3.943333388445096
+Immediate Reward: 2
+Q-values for next state: [1.99323722 0.18727236 0.        ]
+Previous value: 1.9932372161729548
+New Value: 1.9939134945556594
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.943333388445096
+New Value: 3.946397485561597
+Immediate Reward: 2
+Q-values for next state: [1.99391349 0.18727236 0.        ]
+Previous value: 1.9939134945556594
+New Value: 1.9945221451000934
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.946397485561597
+New Value: 3.9492154293703465
+Immediate Reward: 2
+Q-values for next state: [1.99452215 0.18727236 0.        ]
+Previous value: 1.9945221451000934
+New Value: 1.995069930590084
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.9492154293703465
+New Value: 3.9518058095617303
+Immediate Reward: 2
+Q-values for next state: [1.99506993 0.18727236 0.        ]
+Previous value: 1.995069930590084
+New Value: 1.9955629375310757
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: -0.18979622308
+New Value: -0.14056447362399996
+Immediate Reward: -1
+Q-values for next state: [1.31567805 0.         0.        ]
+Previous value: 1.3156780520000002
+New Value: 1.4246705468000003
+Immediate Reward: 2
+Q-values for next state: [0.4097   0.107316 0.      ]
+Previous value: 0.4097
+New Value: 0.62516
+Immediate Reward: 2
+Q-values for next state: [0.57 0.   0.  ]
+Previous value: 0.5700000000000001
+New Value: 0.8130000000000001
+Immediate Reward: 3
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.9518058095617303
+New Value: 3.954185959421134
+Immediate Reward: 2
+Q-values for next state: [1.99556294 0.18727236 0.        ]
+Previous value: 1.9955629375310757
+New Value: 1.9960066437779682
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.954185959421134
+New Value: 3.9563720212130393
+Immediate Reward: 2
+Q-values for next state: [1.99600664 0.18727236 0.        ]
+Previous value: 1.9960066437779682
+New Value: 1.9964059794001714
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.9563720212130393
+New Value: 3.9583790110523522
+Immediate Reward: 2
+Q-values for next state: [1.99640598 0.18727236 0.        ]
+Previous value: 1.9964059794001714
+New Value: 1.9967653814601543
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.9583790110523522
+New Value: 3.9602208827116723
+Immediate Reward: 2
+Q-values for next state: [1.99676538 0.18727236 0.        ]
+Previous value: 1.9967653814601543
+New Value: 1.9970888433141387
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.9602208827116723
+New Value: 3.9619105899286047
+Immediate Reward: 2
+Q-values for next state: [1.99708884 0.18727236 0.        ]
+Previous value: 1.9970888433141387
+New Value: 1.9973799589827248
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.9619105899286047
+New Value: 3.963460146875034
+Immediate Reward: 2
+Q-values for next state: [1.99737996 0.18727236 0.        ]
+Previous value: 1.9973799589827248
+New Value: 1.9976419630844524
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.963460146875034
+New Value: 3.9648806865328914
+Immediate Reward: 2
+Q-values for next state: [1.99764196 0.18727236 0.        ]
+Previous value: 1.9976419630844524
+New Value: 1.9978777667760073
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.29057792940000005
+New Value: 0.34419087846000007
+Immediate Reward: 0
+Q-values for next state: [ 0.835058   0.        -0.1316197]
+Previous value: 0.8350580000000001
+New Value: 1.0316550800000002
+Immediate Reward: 2
+Q-values for next state: [ 0.80912  0.      -0.1504 ]
+Previous value: 0.8091200000000001
+New Value: 0.9183080000000001
+Immediate Reward: 2
+Q-values for next state: [-0.19 -0.19 -0.1 ]
+Previous value: -0.1
+New Value: -0.19
+Immediate Reward: -1
+Q-values for next state: [0. 0. 0.]
+Previous value: -0.14056447362399996
+New Value: -0.08546564212839994
+Immediate Reward: -1
+Q-values for next state: [1.42467055 0.         0.        ]
+Previous value: 1.4246705468000003
+New Value: 1.6887979197200003
+Immediate Reward: 2
+Q-values for next state: [2.0868124 0.        0.       ]
+Previous value: 2.0868124000000003
+New Value: 2.2781311600000005
+Immediate Reward: 4
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.9648806865328914
+New Value: 3.966182516790427
+Immediate Reward: 2
+Q-values for next state: [1.99787777 0.18727236 0.        ]
+Previous value: 1.9978777667760073
+New Value: 1.9980899900984066
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.966182516790427
+New Value: 3.967375174131127
+Immediate Reward: 2
+Q-values for next state: [1.99808999 0.18727236 0.        ]
+Previous value: 1.9980899900984066
+New Value: 1.998280991088566
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.967375174131127
+New Value: 3.968467474835782
+Immediate Reward: 2
+Q-values for next state: [1.99828099 0.18727236 0.        ]
+Previous value: 1.998280991088566
+New Value: 1.9984528919797093
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.968467474835782
+New Value: 3.969467563658195
+Immediate Reward: 2
+Q-values for next state: [1.99845289 0.18727236 0.        ]
+Previous value: 1.9984528919797093
+New Value: 1.9986076027817383
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+Previous value: 3.969467563658195
+New Value: 3.970382959967768
+Immediate Reward: 2
+Q-values for next state: [1.9986076  0.18727236 0.        ]
+Previous value: 1.9986076027817383
+New Value: 1.9987468425035644
+Immediate Reward: 2
+Q-values for next state: [0. 0. 0.]
+Previous value: 0.0
+New Value: 0.0
+Immediate Reward: 0
+Q-values for next state: [0. 0. 0.]
+-------------------------------------
+
+Num episodes: 90
+[[ 3.97038296  0.34419088 -0.08546564]
+ [ 1.99874684  0.18727236  0.        ]
+ [ 1.03165508  0.         -0.1316197 ]
+ [ 1.68879792  0.          0.        ]
+ [ 0.918308    0.         -0.1504    ]
+ [ 0.62516     0.107316    0.        ]
+ [-0.19       -0.19       -0.19      ]
+ [ 0.          0.          0.        ]
+ [ 2.27813116  0.          0.        ]
+ [ 0.813       0.          0.        ]
+ [ 0.          0.          0.        ]]
+RU 8p
+TU 10p
+RU 10a
+ 11a
+
+-------------------------------------
