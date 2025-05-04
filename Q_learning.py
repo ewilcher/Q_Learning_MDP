@@ -3,7 +3,6 @@
 #
 #
 #
-
 import numpy as np
 import random
 import MDP
@@ -71,7 +70,8 @@ class Q_learning:
             episodes += 1
             if diff < 0.001:
                 run = False
-                
+        
+        print('-------------------------------------\n')
         print(f"Num episodes: {episodes}")
         print(self.q_table)
         self.optimal_policy(tree)

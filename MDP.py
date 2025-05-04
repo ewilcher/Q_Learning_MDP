@@ -32,9 +32,7 @@ class MDPNode:
             self.children.append(child[i])
 
     def print_info(self):
-        print(self.rest_state)
-        print(self.hw_state)
-        print(self.time_state)
+        print(f'{self.rest_state}{self.hw_state} {self.time_state}')
     
 
 
